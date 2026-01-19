@@ -10,6 +10,7 @@ log:
 
 # Push to remote
 push:
+	-jj bookmark track main --remote=origin 2>/dev/null
 	jj git push
 
 # Describe current commit (usage: make describe MSG="commit message")
